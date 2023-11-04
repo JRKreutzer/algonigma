@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algonigma - Desvendando algoritmos</title>
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/styles/style_drag_drop.css" />
+    <link rel="stylesheet" href="/styles/style_texto_botoes_jogo.css" />
+  </head>
+  <body>
+
+    <h1 class="questao">
+
+        Você e um grupo de amigos estão planejando um jantar fora, e você deseja escolher o restaurante perfeito. Escreva um algoritmo que descreva o processo passo a passo.
+        
+        <h2 class="questao">
+
+            Total de linhas: <span id="total__questoes">5</span>
+        
+        </h2>
+
+    </h1>
+
+    <section class="draggable-elements">
+
+        <i class="cat draggable" draggable="true" style="color: #ff6384;" id="tres">Se houver pessoas com restrições alimentares no grupo, escolher restaurantes que atendam a essas restrições.</i>
+        <i class="dog draggable" draggable="true" style="color: #36a2eb;" id="um">Pesquisar restaurantes locais. </i>
+        <i class="dove draggable" draggable="true" style="color: #ffce56;" id="quatro">Senão, vá para o próximo passo.</i>
+        <i class="fish draggable" draggable="true" style="color: #9966ff;" id="dois">Verificar o menu de cada restaurante. </i>
+        <i class="frog draggable" draggable="true" style="color: #4bc0c0;" id="cinco"> Selecione o restaurante que ofereça opções apropriadas e tenha uma boa reputação.</i>
+        
+      </section>
+
+      <section class="droppable-elements">
+
+        <div class="droppable" data-draggable-id="um"></div>
+        <div class="droppable" data-draggable-id="dois"></div>
+        <div class="droppable" data-draggable-id="tres"></div>
+        <div class="droppable" data-draggable-id="quatro"></div>
+        <div class="droppable" data-draggable-id="cinco"></div>
+        
+    </section class="acoes">
+      
+      <section>
+
+        <div class="popup succenter">
+
+            <div class="suctitulo">
+
+                Fase Concluída
+
+            </div>
+
+            <div class="succrecao">
+
+                Parabéns, você concluiu a fase e está pronto para o próximo desafio! Sua dedicação resultou em sucesso. Continue a aprimorar suas habilidades para enfrentar novos desafios com confiança.
+
+            </div>
+
+            <div class="esconder-popup">
+
+                <a id="esconder-popup-popup">Esconder popup</a>
+
+            </div>
+
+        </div>
+
+        <div class="popup2 succenter2">
+
+            <div class="suctitulo2">
+
+                Fase Não Concluída
+
+            </div>
+
+            <div id="texto__falha" class="succrecao2"> 
+
+            </div>
+
+            <div class="esconder-popup2">
+
+                <a id="esconder-popup-popup2">Esconder popup</a>
+
+            </div>
+
+        </div>
+
+        <div class="succenter succenter2">
+
+            <button id="abrir-popup-popup" disabled>Menu</button>
+            <button id="abrir-popup-popup2" disabled>Reiniciar</button>
+
+        </div>
+
+        <div class="botoes">
+        
+            <div class="caixa_botoes">
+
+                <a id="menu" href="/game.html">Menu</a>
+                <a id="reiniciar" href="/levels/condicao/contextual/lvls/condicao_contextual_lvl2.html">Reiniciar</a>
+                <a id="proximo" href="/levels/condicao/contextual/lvls/condicao_contextual_lvl3.html">Proximo</a>                            
+            
+            </div>
+        
+        </div>
+
+    </section>
+
+    <script src="/js/app.js"></script>
+
+  </body>
+
+</html>

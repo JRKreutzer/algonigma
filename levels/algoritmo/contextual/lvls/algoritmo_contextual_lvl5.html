@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algonigma - Desvendando algoritmos</title>
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/styles/style_drag_drop.css" />
+    <link rel="stylesheet" href="/styles/style_texto_botoes_jogo.css" />
+  </head>
+  <body>
+
+    <h1 class="questao">
+
+        Vamos imaginar que você e seus amigos decidiram jogar uma partida de Uno, um jogo de cartas divertido. Descreva um algoritmo que explique o processo passo a passo, desde a preparação do jogo até a determinação do vencedor.
+        
+        <h2 class="questao">
+
+            Total de linhas: <span id="total__questoes">7</span>
+        
+        </h2>
+
+    </h1>
+
+    <section class="draggable-elements">
+
+        <i class="cat draggable" draggable="true" style="color: #ff6384;" id="cinco">Se um jogador não puder jogar, ele compra uma carta do baralho.</i>
+        <i class="dog draggable" draggable="true" style="color: #36a2eb;" id="dois">Distribuir sete cartas para cada jogador.</i>
+        <i class="dove draggable" draggable="true" style="color: #ffce56;" id="quatro">O jogador à esquerda do distribuidor joga uma carta que combine em número ou cor com a carta inicial.</i>
+        <i class="fish draggable" draggable="true" style="color: #9966ff;" id="sete">Parabenizar o vencedor do jogo.</i>
+        <i class="frog draggable" draggable="true" style="color: #4bc0c0;" id="um">Embaralhar o baralho de cartas.</i>
+        <i class="frog draggable" draggable="true" style="color: #4bc0c0;" id="seis">O jogo continua até que um jogador fique sem cartas na mão.</i>
+        <i class="frog draggable" draggable="true" style="color: #4bc0c0;" id="tres">Colocar uma carta no centro como carta inicial.</i>
+        
+      </section>
+
+      <section class="droppable-elements">
+
+        <div class="droppable" data-draggable-id="um"></div>
+        <div class="droppable" data-draggable-id="dois"></div>
+        <div class="droppable" data-draggable-id="tres"></div>
+        <div class="droppable" data-draggable-id="quatro"></div>
+        <div class="droppable" data-draggable-id="cinco"></div>
+        <div class="droppable" data-draggable-id="seis"></div>
+        <div class="droppable" data-draggable-id="sete"></div>
+        
+    </section class="acoes">
+      
+      <section>
+
+        <div class="popup succenter">
+
+            <div class="suctitulo">
+
+                Fase Concluída
+
+            </div>
+
+            <div class="succrecao">
+
+                Parabéns, você concluiu a fase e está pronto para o próximo desafio! Sua dedicação resultou em sucesso. Continue a aprimorar suas habilidades para enfrentar novos desafios com confiança.
+
+            </div>
+
+            <div class="esconder-popup">
+
+                <a id="esconder-popup-popup">Esconder popup</a>
+
+            </div>
+
+        </div>
+
+        <div class="popup2 succenter2">
+
+            <div class="suctitulo2">
+
+                Fase Não Concluída
+
+            </div>
+
+            <div id="texto__falha" class="succrecao2"> 
+
+            </div>
+
+            <div class="esconder-popup2">
+
+                <a id="esconder-popup-popup2">Esconder popup</a>
+
+            </div>
+
+        </div>
+
+        <div class="succenter succenter2">
+
+            <button id="abrir-popup-popup" disabled>Menu</button>
+            <button id="abrir-popup-popup2" disabled>Reiniciar</button>
+
+        </div>
+
+        <div class="botoes">
+        
+            <div class="caixa_botoes">
+
+                <a id="menu" href="/game.html">Menu</a>
+                <a id="reiniciar" href="/levels/algoritmo/contextual/lvls/algoritmo_contextual_lvl5.html">Reiniciar</a>
+                <a id="proximo" href="/levels/algoritmo/codigo/lvls/algoritmo_codigo_lvl1.html">Proximo</a>                            
+            
+            </div>
+        
+        </div>
+
+    </section>
+
+    <script src="/js/app.js"></script>
+
+  </body>
+
+</html>
